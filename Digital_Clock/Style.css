@@ -8,5 +8,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    font-weight: 1000;
 }
+#Clock{
+    font-size: 40px;
+    background-color: darkgreen;
+    padding: 20px 80px;
+    margin-top: 10px;
+    border-radius: 20px;
+}   
