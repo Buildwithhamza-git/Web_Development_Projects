@@ -1,0 +1,176 @@
+*body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: rgb(12, 89, 141);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.5;
+    text-align: center;
+    /* align-content: center; */
+}
+
+#static_content {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0px;
+
+}
+
+button {
+    border-color: #334155;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: 1fr,1fr,1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: rgb(27, 144, 216);
+    padding: 24px;
+    /* max-width: 350px; */
+    border-radius: 16px;
+    position: relative;
+    border: 1px solid #334155;
+    transition: var(--transition);
+    justify-content: left;
+
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    min-height: 45px;
+}
+
+.card strong {
+    color: var(--accent);
+    font-size: 1.4rem;
+    display: block;
+}
+
+#count {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-size: large;
+}
+
+
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.menu-btn:hover {
+    border-radius: 50%;
+    background-color: #334155;
+    box-shadow: 0px, 0px, 0px;
+    cursor: pointer;
+}
+
+.dropdown {
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: black;
+    display: none;
+    /* box-sizing: border-box; */
+}
+
+.dropdown div:hover {
+    background: #f1f5f9;
+    color: blue;
+    /* color: var(--accent-ho   ver); */
+}
+
+.dropdown div:last-child:hover {
+    color: red;
+    /* color: var(--danger); */
+}
+
+.dropdown div {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: pointer;
+}
+
+#popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#form {
+    max-width: 400px;
+    color: white;
+    width: 100%;
+    border: 1px solid #334155;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+#form h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+input {
+    background: var(--bg);
+    border: 1px solid #334155;
+    color: white;
+    display: block;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    /* transition: var(--transition); */
+}
